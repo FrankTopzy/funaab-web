@@ -1,0 +1,125 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-section {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/Sanate_Back_view-1.jpg');
+  background-repeat: repeat;
+}
+
+nav ul .list {
+  padding: 20px;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: 63px;
+  width: max-content;
+  background: white;
+  color: grey;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+  border: none;
+  border-top: none;
+  z-index: 10;
+}
+
+.dropdown-list li:hover {
+  color: rgb(3, 77, 3);
+}
+
+.dropdown-list li {
+  margin: 20px;
+  transition: 0.3s;
+}
+
+.dropdown:hover .dropdown-list {
+  opacity: 1;
+  pointer-events: initial;
+  transition: 0.5s
+}
+
+.dropdown ion-icon {
+  transition: transform 0.5s;
+}
+
+.dropdown:hover ion-icon {
+  transform: rotate(180deg);
+}
+
+.nav-toggle {
+  display: none;
+}
+
+
+@media screen  and (max-width: 1258px) {
+  .right-section {
+    flex-direction: column;
+    position: absolute;
+    top: 110px;
+    width: 100%;
+    left: 0;
+    background: green;
+    padding: 20px;
+    z-index: 10;
+    opacity: 0;
+  }
+  .nav-menu{
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 280px;
+    width: 100%;
+    left: 0;
+    background: white;
+    opacity: 0;
+    padding-top: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .nav-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+
+    position: relative;
+  }
+
+  .nav-close,
+  .nav-burger {
+    position: absolute;
+  }
+
+  .nav-close {
+    opacity: 0;
+  }
+
+  .show-menu {
+    opacity: 1;
+    pointer-events: initial;
+    transition: 0.5s;
+  }
+  
+  .show-icon .nav-burger {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+
+  .show-icon .nav-close {
+    opacity: 1;
+    transform: rotate(90deg);
+  }
+
+  .about-dept {
+    height: 1400px;
+    flex-direction: column;
+  }
+
+  .intro,
+  .department-list {
+    width: 100%;
+  }
+}

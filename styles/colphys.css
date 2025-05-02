@@ -1,0 +1,29 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.colphysImg {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.college-name {
+  color: white;
+  font-family: "Playfair Display", Sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1em;
+  letter-spacing: -0.5px;
+  -webkit-text-stroke-color: #000;
+  stroke: #000;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.92);
+}
+
+.about-college ul {
+  list-style: square;
+}
+
+.department-list {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
